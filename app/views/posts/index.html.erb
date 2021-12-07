@@ -4,3 +4,6 @@
     <%= form.text_field :body %> <%= form.submit "送信" %>
   </div>
 <% end %>
+<%= render partial: "post", collection: @posts %>
+
+<%= paginate @posts %>
